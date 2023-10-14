@@ -1,0 +1,13 @@
+# E10 金白菜战术
+chapter: E
+map: 5
+from_which_entrance: 1
+selected_nodes: [C, G, Y, W, Z]
+repair_mode: 1
+node_defaults:
+  formation: 2
+  proceed: True
+node_args:
+  Z:
+    formation: 4
+    night: True

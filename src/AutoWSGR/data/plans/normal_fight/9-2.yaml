@@ -1,0 +1,17 @@
+# 功能：F点一定是6鱼，相比光打B多了捞胖次功能，但是有概率反不光潜艇吃桶
+# 带路条件：驱逐>=2，最高航速>=40
+# 推荐配置：满足带路条件的可炸鱼船均可
+# 来源：https://nga.178.com/read.php?tid=30166633
+
+# MapLevel
+chapter: 9
+map: 2
+selected_nodes: [A]
+
+# NodeLevel
+node_args:
+  A:
+    detour: True
+    formation: 4
+    proceed: False
+    long_missile_support: False

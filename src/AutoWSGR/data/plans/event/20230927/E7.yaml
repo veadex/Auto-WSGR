@@ -1,0 +1,15 @@
+#6ss幸运星打捞e12
+
+chapter: E
+map: 2
+selected_nodes: [A, D, E,  H, J, M]
+repair_mode: 1
+node_defaults:
+  proceed: True
+  formation: 2
+# NodeLevel
+node_args:
+
+  M:
+    formation: 4
+    night: True

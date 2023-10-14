@@ -2,8 +2,8 @@
 #   1）练6鱼  2）捞胖次，电表倒转
 #   3）捞稀有池[鲃鱼、霞飞、尼古拉斯、哥伦比亚、B65、塞班、托戈、吸血鬼、七省联盟、U47、墨尔波墨涅、龙骧、哈曼、留里克、埃德加·居内]
 # 带路条件：平均航速<=27，最低航速<=21
-# 带 1206 打单反潜,极大降低破损率
-# 推荐配置：>=5鱼(必须含三级技能1206)
+# 推荐配置：6鱼
+# 来源：https://nga.178.com/read.php?tid=16860675
 
 # MapLevel
 chapter: 8
@@ -16,8 +16,6 @@ node_args:
   A:
     formation: 4
     night: False
-    enemy_rules:
-      - [DD + CL > 1, retreat]
     proceed: True
   I:
     formation: 4

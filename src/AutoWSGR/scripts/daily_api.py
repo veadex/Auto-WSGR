@@ -1,6 +1,7 @@
 import time
 from types import SimpleNamespace as SN
 
+import AutoWSGR.fight.exercise as ef
 from AutoWSGR.constants import literals
 from AutoWSGR.fight.battle import BattlePlan
 from AutoWSGR.fight.normal_fight import NormalFightPlan
@@ -10,7 +11,7 @@ from AutoWSGR.game.game_operation import (
     SetSupport,
     get_rewards,
 )
-from AutoWSGR.ocr.digit import get_loot_and_ship
+from AutoWSGR.ocr.digit import get_loot_and_ship, get_resources
 from AutoWSGR.scripts.main import start_script
 
 
@@ -55,9 +56,11 @@ class DailyOperation:
         if self.config.auto_set_support:
             SetSupport(self.timer, True)
 
-        if self.config.stop_maxship:
-            self.config.stop_maxship = False
-            # get_loot_and_ship(self.timer)  # 获取胖次掉落和船只掉落数据
+        get_loot_and_ship(self.timer)  # 获取胖次掉落和船只掉落数据
+        get_resources(self.timer)
+
+        exf = ef.NormalExercisePlan(self.timer, "exercise/plan_1.yaml")
+        exf.run()
 
         # 自动出征
         if self.config.auto_normal_fight:

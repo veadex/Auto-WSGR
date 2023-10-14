@@ -1,0 +1,10 @@
+#6ss幸运星打捞e12
+
+chapter: E
+map: 6
+selected_nodes: [B]
+from_which_entrance: 2
+repair_mode: 2
+
+node_defaults:
+  formation: 2

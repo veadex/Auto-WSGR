@@ -1,0 +1,8 @@
+#6ss幸运星打捞e12
+
+chapter: E
+map: 1
+selected_nodes: [B]
+node_defaults:
+  proceed: False
+  formation: 5
